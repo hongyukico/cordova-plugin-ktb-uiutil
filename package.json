@@ -1,13 +1,13 @@
 {
-  "name": "cordova-plugin-ktb-request",
+  "name": "cordova-plugin-ktb-UIUtil",
   "version": "1.0.0",
-  "description": "cordova request plugin",
+  "description": "cordova UIUtil plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "cordova": {
-    "id": "cordova-plugin-ktb-request",
+    "id": "cordova-plugin-ktb-UIUtil",
     "platforms": [
       "android",
       "ios"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hongyukico/cordova-plugin-ktb-request.git"
+    "url": "git+https://github.com/hongyukico/cordova-plugin-ktb-uiutil.git"
   },
   "keywords": [
     "cordova",
@@ -23,8 +23,8 @@
   ],
   "author": "ktb",
   "license": "ISC",
-  "homepage": "https://github.com/hongyukico/cordova-plugin-ktb-request#readme",
+  "homepage": "https://github.com/hongyukico/cordova-plugin-ktb-uiutil#readme",
   "bugs": {
-    "url": "https://github.com/hongyukico/cordova-plugin-ktb-request/issues"
+    "url": "https://github.com/hongyukico/cordova-plugin-ktb-uiutil/issues"
   }
 }
