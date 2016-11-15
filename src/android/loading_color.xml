@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black_50">#8C000000</color>
+	    <!-- 最黑-->
+    <color name="black">#000000</color>
+	<color name="gray_cc">#cccccc</color>
+	<color name="G4">#777777</color>
+	 <!-- 重要按钮色 -->
+    <color name="Or">#ff783c</color>
+	<color name="black_70">#B3000000</color>
+	<color name="white">#ffffff</color>
+</resources>

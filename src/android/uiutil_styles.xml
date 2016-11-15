@@ -1,0 +1,16 @@
+<resources><!-- ActionSheet进出淡入淡出动画 -->
+    <style name="ToastDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_putin</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_putout</item>
+    </style>
+	
+    <style name="UIUtilDialogStyle" parent="android:Theme.Dialog">
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Dialog背景不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

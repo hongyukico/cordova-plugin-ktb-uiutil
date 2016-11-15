@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-ktb-UIUtil" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>UIUtilPlugin</name>
+    <js-module name="UIUtilPlugin" src="www/UIUtilPlugin.js">
+        <clobbers target="cordova.plugins.UIUtilPlugin" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <!-- 替换插件类名 -->
+            <feature name="UIUtil">
+                <param name="ios-package" value="CDVUIUtilPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/CDVUIUtilPlugin.h" />
+        <source-file src="src/ios/CDVUIUtilPlugin.m" />
+        <source-file src="src/ios/CDVSTAlertView.h" />
+        <source-file src="src/ios/CDVSTAlertView.m" />
+        <source-file src="src/ios/CDVSTModal.h" />
+        <source-file src="src/ios/CDVSTModal.m" />
+        <source-file src="src/ios/CDVSTModalUtil.h" />
+        <source-file src="src/ios/CDVZYJAlert.h" />
+        <source-file src="src/ios/CDVZYJAlert.m" />
+        <source-file src="src/ios/false_icon.png" />
+        <source-file src="src/ios/right_icon.png" />
+        <source-file src="src/ios/angle-mask@2x.png" />
+        <source-file src="src/ios/error@2x.png" />
+        <source-file src="src/ios/success@2x.png" />
+        <source-file src="src/ios/CDVProgressHUD.h" />
+        <source-file src="src/ios/CDVProgressHUD.m" />
+    </platform>
+   <!--android 平台-->
+	 <platform name="android">
+	   <!-- 插件名 -->
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="UIUtil">
+                <param name="android-package" value="com.ktb.plugin.UIUtilPlugin" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!-- Required  一些系统要求的权限，如访问网络等-->
+            <uses-permission android:name="android.permission.GET_TASKS" />
+        </config-file>
+		<!-- 布局文件 -->
+		<source-file src="src/android/uiutil_styles.xml" target-dir="res/values" />	<!--样式--> 
+        <source-file src="src/android/layout/comm_view_loading_dialog.xml" target-dir="res/layout" /><!--加载框的布局-->
+		<source-file src="src/android/anim/trade_comm_loading_anim.xml" target-dir="res/anim" /><!--加载框的动画-->
+		<source-file src="src/android/loading_color.xml" target-dir="res/values" />	<!--加载框的颜色--> 
+		<source-file src="src/android/LoadingDialog.java" target-dir="src/com/ktb/plugin/view" />  <!--加载框的View--> 
+		<source-file src="src/android/loading.png" target-dir="res/drawable" />
+		<source-file src="src/android/trade_comm_progress_toast_bg.xml" target-dir="res/drawable" />
+		<source-file src="src/android/trade_comm_progress_dialog_bg.xml" target-dir="res/drawable" />
+		<source-file src="src/android/UIUtilPlugin.java" target-dir="src/com/ktb/plugin" />  <!--加载框的View--> 
+		<source-file src="src/android/CommonDialog.java" target-dir="src/com/ktb/plugin/view" />  <!--加载框的View--> 
+		<source-file src="src/android/layout/comm_view_toast.xml" target-dir="res/layout" /><!--提示框的布局-->
+		<source-file src="src/android/CommonToast.java" target-dir="src/com/ktb/plugin/view" />  <!--提示框的View--> 
+		<source-file src="src/android/layout/alertdialog_return.xml" target-dir="res/layout" /><!--提示框的布局-->
+		<source-file src="src/android/dialog_bg.png" target-dir="res/drawable" />
+		<source-file src="src/android/toast_false_icon.png" target-dir="res/drawable" />
+        <source-file src="src/android/toast_right_icon.png" target-dir="res/drawable" />
+		<source-file src="src/android/UIUtil.java" target-dir="src/com/ktb/plugin/view" />  <!--提示框的View--> 
+		<source-file src="src/android/anim/actionsheet_dialog_putin.xml" target-dir="res/anim" />
+		<source-file src="src/android/anim/actionsheet_dialog_putout.xml" target-dir="res/anim" />
+    </platform>
+	<!--android 平台-->
+</plugin>

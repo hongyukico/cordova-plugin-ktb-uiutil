@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-ktb-request",
+  "version": "1.0.0",
+  "description": "cordova request plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cordova": {
+    "id": "cordova-plugin-ktb-request",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongyukico/cordova-plugin-ktb-request.git"
+  },
+  "keywords": [
+    "cordova",
+    "cache"
+  ],
+  "author": "ktb",
+  "license": "ISC",
+  "homepage": "https://github.com/hongyukico/cordova-plugin-ktb-request#readme",
+  "bugs": {
+    "url": "https://github.com/hongyukico/cordova-plugin-ktb-request/issues"
+  }
+}
