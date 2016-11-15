@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-ktb-UIUtil",
+  "name": "cordova-plugin-ktb-uiutil",
   "version": "1.0.0",
   "description": "cordova UIUtil plugin",
   "main": "index.js",

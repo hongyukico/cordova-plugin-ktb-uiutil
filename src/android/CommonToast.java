@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.cordova.hellocordova.R;
+import com.ktb.cordova.R;
 
 
 public class CommonToast {

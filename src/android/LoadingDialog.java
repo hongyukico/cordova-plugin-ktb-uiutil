@@ -10,7 +10,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import io.cordova.hellocordova.R;
+import com.ktb.cordova.R;
 
 
 /**
